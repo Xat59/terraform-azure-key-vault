@@ -11,7 +11,6 @@ resource "azurerm_key_vault" "kv" {
   tenant_id = var.tenant_id
 
   purge_protection_enabled   = var.purge_protection_enabled
-  soft_delete_enabled        = var.soft_delete_enabled
   soft_delete_retention_days = var.soft_delete_retention_days
 
   enabled_for_deployment          = var.enabled_for_deployment

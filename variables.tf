@@ -71,12 +71,6 @@ variable "purge_protection_enabled" {
   default     = false
 }
 
-variable "soft_delete_enabled" {
-  type        = bool
-  description = "(Optional) Should Soft Delete be enabled for this Key Vault? Defaults to false."
-  default     = false
-}
-
 variable "soft_delete_retention_days" {
   type        = number
   description = "(Optional) The number of days that items should be retained for once soft-deleted. Defaults to 7."
